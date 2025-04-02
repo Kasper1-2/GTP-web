@@ -14,7 +14,7 @@ const AboutSection = () => {
             <div className="about-text">
               <h2>About Gran Turismo Panama</h2>
               <p>
-                Gran Turismo Panamá is a competitive sim racing team based in Panama, founded in 2021. 
+                Gran Turismo Panamá is a competitive sim racing team based in Panama, founded in 2012. 
                 We compete in national and international leagues across multiple platforms, 
                 and aim to bring professional-level racing to the virtual world.
               </p>

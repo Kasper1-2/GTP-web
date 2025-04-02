@@ -1,118 +1,146 @@
 .navbar {
-    position: fixed;
-    height: 64px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 2rem;
-    z-index: 100;
-    background-color: #000;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    color: white;
-    overflow: hidden;
-  }
+  position: fixed;
+  height: 64px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background-color: #000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  overflow: hidden;
+}
 
-  .navbar.in-home {
-    background-color: #000; /* solid black in Hero section */
-  }
-  
-  .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.7); 
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
-  }
+.navbar.in-home {
+    background-color: #002776; /* Gulf blue */
+}
 
-  .navbar-logo-img {
-    max-height: 120px;
-    height: auto;
-    width: auto;
-    object-fit: contain;
-    display: block;
-  }
-  
-  
-  .navbar-inner {
-    max-width: 1280px;
-    height: 100%;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.navbar.scrolled {
+    background-color: rgba(0, 39, 118, 0.85); /* Semi-transparent Gulf blue */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
 
-  .navbar-left {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .logo-wrapper {
-    width: 80px; 
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
+.navbar-logo-img {
+  max-height: 120px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
 
-  .logo-wrapper img {
-    transition: opacity 0.3s ease;
+.navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
 
-  }
+.navbar-left {
+  display: flex;
+  align-items: center;
+  padding-left: 0.0rem;
+}
 
-  .hidden {
-    opacity: 0;
-    position: absolute;
-    transition: opacity 0.3s ease;
+.logo-wrapper {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-wrapper img {
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s ease;
 }
 
 .visible {
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 0.5s ease;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
+}
+
+.navbar-socials a {
+    margin-right: 1rem;
+    color: #fefefe;
+    transition: color 0.2s ease;
   }
 
-  .navbar-socials a {
-    margin-right: 1rem;
-    color: white;
-    transition: opacity 0.3s ease;
-  }
-  
   .navbar-socials a:hover {
-    color: #f87171;
+    color: #fe6218; /* Gulf orange */
   }
-  
-  .navbar-center {
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     gap: 1.5rem;
+  }  
+
+.navbar-logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #c42020;
+    transition: color 0.2s ease;
+  }
+
+  .navbar-links a:hover {
+    color: #b8ebda !important;
+  }
+
+.navbar-hamburger {
+    padding-right: 0rem;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .navbar-hamburger button {
+    background: none;
+    border: none;
+    color: #fefefe;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
   }
   
-  .navbar-logo {
-    font-size: 1.25rem;
-    font-weight: bold;
+  .navbar-hamburger button:hover {
+    color: #fe6218;
+  }
+  
+
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navbar-links a {
     text-decoration: none;
     color: white;
+    transition: color 0.2s;
   }
-  
-  .navbar-links {
-    display: none;
+
+  .navbar-links a:hover {
+    color: #aaa;
   }
-  
-  @media (min-width: 768px) {
-    .navbar-links {
-      display: flex;
-      gap: 1rem;
-    }
-  
-    .navbar-links a {
-      text-decoration: none;
-      color: white;
-      transition: color 0.2s;
-    }
-  
-    .navbar-links a:hover {
-      color: #aaa;
-    }
-  }
-  
+}

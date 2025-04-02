@@ -1,19 +1,63 @@
 .drivers-section {
-    padding: 4rem 2rem;
-    background-color: #111;
-    color: white;
-  }
-  
-  .drivers-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #fff;
-  }
-  
-  .drivers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #111;
+  color: white;
+}
+
+.driver-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color:#fe6218;
+}
+
+.drivers-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.drivers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.driver-card {
+  background-color: #b8d9eb; /* Gulf Celeste */
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: #111; /* Text on light background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.driver-gear {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: #fe6218; 
+}
+
+.driver-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(254, 98, 24, 0.3); /* subtle orange glow on hover */
+}
+
+
+.driver-card:hover {
+  border: 2px solid #fe6218;
+  transform: scale(1.02);
+  transition: 0.2s ease;
+}
+
+
+.gear-item label {
+  color: #fe6218; /* Naranja for "Base", "Volante", etc. */
+  font-weight: 600;
+}
+
+.gear-item span {
+  color: #b8d9eb; /* Celeste for values */
+}
+

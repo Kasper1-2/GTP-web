@@ -1,63 +1,63 @@
 .about-section {
-    background-color: #fff;
-    padding: 4rem 2rem;
-    color: #111;
-  }
-  
-  .about-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  
-  .about-image {
-    flex: 1 1 500px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .about-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: contain;
+  background-color: #fff;
+  padding: 4rem 2rem;
+  color: #111;
+  background: linear-gradient(to left, #fefefe, #b8d9eb10);
+}
 
-  }
-  
-  .about-text {
-    flex: 1 1 400px;
-  }
-  
-  .about-text h2 {
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
-    color: #111;
-  }
-  
-  .about-text p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-  }
+.about-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem; /* medium padding */
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center; /* center them together, not pushing right */
+}
 
-  .about-marker-wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex: 1 1 400px;
-    gap: 1.5rem;
-    min-width: 0;
-  }
-  
-  .about-marker {
-    width: 6px;
-    background-color: #3b82f6;
-    border-radius: 4px;
-  }
-  
-  
-  
+
+.about-image {
+  flex: 1 1 50%;
+  display: flex;
+}
+
+.about-image img {
+  width: 75%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+.about-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-marker-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+.about-marker {
+  width: 6px;
+  background-color: #002776; /* Azul */
+  border-radius: 4px;
+  flex-shrink: 0;
+  height: 100%;
+  min-height: 200px;
+}

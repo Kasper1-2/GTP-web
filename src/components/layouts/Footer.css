@@ -1,0 +1,50 @@
+.footer {
+    background-color: #002776; /* Gulf azul */
+    padding: 2rem 1rem;
+    color: #fefefe;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .sponsor-strip {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .sponsor-track {
+    display: flex;
+    gap: 3rem;
+    animation: scroll-left 25s linear infinite;
+    align-items: center;
+  }
+  
+  .sponsor-track img {
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* white logos effect */
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+  }
+  
+  .sponsor-track img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .footer-disclaimer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #b8d9eb;
+    margin-top: 1rem;
+  }
+  
