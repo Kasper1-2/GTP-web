@@ -1,0 +1,19 @@
+.drivers-section {
+    padding: 4rem 2rem;
+    background-color: #111;
+    color: white;
+  }
+  
+  .drivers-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  
+  .drivers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
