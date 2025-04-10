@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import "./GallerySection.css";
 
 import img1 from "../../assets/Screenshot 2025-04-03 at 02.20.38.png";
