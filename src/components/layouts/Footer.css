@@ -7,30 +7,58 @@
   }
   
   .sponsor-strip {
-    overflow: hidden;
     width: 100%;
-    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    background-color: #002776; /* deep blue */
+    padding: 1rem 0;
   }
   
   .sponsor-track {
     display: flex;
-    gap: 3rem;
-    animation: scroll-left 25s linear infinite;
-    align-items: center;
+    width: fit-content;
+    animation: scrollRightToLeft 40s linear infinite;
   }
   
-  .sponsor-track img {
-    height: 60px;
+  .sponsor-strip img {
+    height: 50px;
+    margin: 0 2rem;
     object-fit: contain;
-    filter: brightness(0) invert(1); /* white logos effect */
-    opacity: 0.9;
-    transition: transform 0.3s ease;
+    filter: none;
   }
   
-  .sponsor-track img:hover {
-    transform: scale(1.05);
-    opacity: 1;
+  /* Animate from right to left */
+  @keyframes scrollRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
+  
+  /* Optional: fade effect */
+  .sponsor-strip::before,
+  .sponsor-strip::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .sponsor-strip::before {
+    left: 0;
+    background: linear-gradient(to right, #002776, transparent);
+  }
+  
+  .sponsor-strip::after {
+    right: 0;
+    background: linear-gradient(to left, #002776, transparent);
+  }
+  
   
   @keyframes scroll-left {
     0% {
