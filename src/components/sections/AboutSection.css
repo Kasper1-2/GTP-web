@@ -1,18 +1,40 @@
 .about-section {
-  background-color: #fff;
+  width: 100vw;
+  background-size: cover;
+  background-position: 30% center; /* Pulls the image to the left */
+  background-repeat: no-repeat;
+  position: relative;
   padding: 4rem 2rem;
   color: #111;
-  background: linear-gradient(to left, #fefefe, #b8d9eb10);
+}
+
+
+/* Dark overlay for better text readability */
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  z-index: 0;
+}
+
+.about-container,
+.about-marker-wrap {
+  position: relative;
+  z-index: 1;
+  margin-left: 1rem;
 }
 
 .about-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 2rem; /* medium padding */
   display: flex;
-  gap: 3rem;
-  align-items: flex-start;
-  justify-content: center; /* center them together, not pushing right */
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 75rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -37,20 +59,24 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
+  color: #fe6218;
 }
 
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .about-marker-wrap {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  gap: 2rem;
-  padding-right: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 960px;
+  margin: auto;
 }
 
 .about-marker {
