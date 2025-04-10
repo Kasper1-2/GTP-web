@@ -93,7 +93,6 @@
   background-color: #ff8445;
 }
 
-/* Responsive Tweaks */
 @media (max-width: 768px) {
   .gallery-title {
     font-size: 2rem;
@@ -108,3 +107,4 @@
     max-height: 80vh;
   }
 }
+

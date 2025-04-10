@@ -38,4 +38,22 @@
     font-style: italic;
     color: #ddd;
   }
+
+
+  @media (max-width: 768px) {
+    .hero {
+      background-position: top center;
+      height: 90vh; 
+    }
+  
+    .hero-title {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
+  
+    .hero-content {
+      padding-top: 6rem; 
+    }
+  }
+  
   
