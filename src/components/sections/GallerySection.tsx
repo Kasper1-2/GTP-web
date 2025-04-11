@@ -10,9 +10,8 @@ import img6 from "../../assets/Screenshot_amr_v8_vantage_gt3_sprint_acc_actr_caf
 import img7 from "../../assets/Screenshot_amr_v8_vantage_gt3_sprint_acc_imola_20-2-125-14-35-54.png";
 import img8 from "../../assets/Screenshot_mercedes_amg_gt4_imola_20-2-125-18-6-3.png";
 import img9 from "../../assets/Screenshot_trr_gt3_bmw_m4_gt3_imola_20-2-125-17-32-56.png";
-import img10 from "../../assets/Screenshot_bny_porsche_992_gt3r_imola_31-0-125-11-32-3.png";
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
