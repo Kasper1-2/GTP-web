@@ -7,7 +7,7 @@ interface DriverCardProps {
   name: string;
   gear: string[];
   socials?: {
-    youtube?: string;
+    twitch?: string;
     instagram?: string;
     facebook?: string;
   };
