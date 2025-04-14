@@ -38,38 +38,41 @@ const DriverCard = ({ name, gear, socials }: DriverCardProps) => {
             </ul>
           </>
         ) : (
-          <Box className="driver-name-view">
-            <Typography variant="h6" className="driver-name">{name}</Typography>
-            <Typography variant="body2" className="tap-hint">Click to view gear</Typography>
-          </Box>
-        )}
+          <>
+            <Box className="driver-name-view">
+              <Typography variant="h6" className="driver-name">{name}</Typography>
+              <Typography variant="body2" className="tap-hint">Click to view gear</Typography>
+            </Box>
   
-        {socials && (
-          <Box
-            sx={{
-              position: 'absolute',
-              top: 110,
-              left: 240,
-              display: 'flex',
-              gap: 1,
-              zIndex: 10,
-            }}
-          >
-            {socials.instagram && (
-              <a href={socials.instagram} target="_blank" rel="noreferrer">
-                <FaInstagram color="#fe6218" />
-              </a>
+            {socials && (
+              <Box
+                sx={{
+                  position: 'absolute',
+                  bottom: 100,
+                  right: 5,
+                  display: 'flex',
+                  gap: 1,
+                  zIndex: 10,
+                }}
+              >
+                {socials.instagram && (
+                  <a href={socials.instagram} target="_blank" rel="noreferrer">
+                    <FaInstagram color="#fe6218" />
+                  </a>
+                )}
+                {socials.twitch && (
+                  <a href={socials.twitch} target="_blank" rel="noreferrer">
+                    <FaTwitch color="#fe6218" />
+                  </a>
+                )}
+              </Box>
             )}
-            {socials.twitch && (
-              <a href={socials.twitch} target="_blank" rel="noreferrer">
-                <FaTwitch color="#fe6218" />
-              </a>
-            )}
-          </Box>
+          </>
         )}
       </CardContent>
     </Card>
   );
+  
   
 };
 
